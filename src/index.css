@@ -234,7 +234,6 @@ h1{
   
 }
 
-
   h6{
   color: white;
   font-size: 50px;
@@ -560,8 +559,9 @@ h1{
     width: 100%;
     position: fixed;
     overflow: hidden;
-    top: -100%;
+    top: -100vh;
     left: 0;
+    right: 0;
     min-height: 100vh;
     background-color: #262626;
     transition: all .5s ease-in-out;
@@ -703,7 +703,7 @@ h1{
     line-height: 45px;
   }
   .currency-wrapper> div{
-    height: 250px;
+    /* height: 250px; */
   }
   .currency-wrapper p{
     font-size: 15px;
@@ -764,17 +764,19 @@ h1{
     border-radius: 50%;
   }
   .creditcard-sec >div{
-    padding-bottom: 30px;
     gap: 40px;
     flex-wrap: wrap;
     flex-direction: column-reverse;
+    align-items: center;
   }
   .creditcard-sec img{
     width: 230px;
-    margin-left: 150px;
+  }
+  .creditcard-sec button{
+    margin-bottom: 12px;
   }
   .Carousel-sec{
-    padding-left: 30px;
+    padding-inline: 30px;
   }
   .Carousel-sec h5{
     font-size: 30px;
