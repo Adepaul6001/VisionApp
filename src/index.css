@@ -205,6 +205,10 @@ h1{
   border: 2px solid white;
   position: relative;
   border-radius: 20px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  justify-content: center;
 }
 .image-container:hover .second-img{
   opacity: 1;
@@ -214,11 +218,13 @@ h1{
   height: 100%;
   object-fit: cover;
   border-radius: 20px;
+  position: absolute;
   
 }
 .second-img{
   width: 100%;
   height: 100%;
+  object-fit: cover;
   position: absolute;
   top: 0;
   left: 0;
@@ -372,7 +378,6 @@ h1{
 }
 .creditcard-sec>div{
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   gap: 80px;
 }
@@ -455,17 +460,14 @@ h1{
 .arrow-btn{
   display: flex;
 }
-.secure-container{
-  background-color:#183316;
-  padding: 80px;
-
-}
 .secure-first{
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 250px;
+  background-color:#183316;
+  padding: 80px;
 }
 .secure-first img{
   width: 400px;
@@ -556,16 +558,18 @@ h1{
 }
   .nav-menu {
     width: 100%;
-    position: absolute;
+    position: fixed;
     overflow: hidden;
-    right:0 ;
-    top: -800%;
+    top: -100%;
     left: 0;
     min-height: 100vh;
     background-color: #262626;
     transition: all .5s ease-in-out;
     flex-direction: column;
     gap: 10px;
+  }
+  .main-nav>div>div{
+    display: none;
   }
   .nav-vision span{
     font-size: 14px;
@@ -574,7 +578,7 @@ h1{
     z-index: 1000;
   }
   .nav-menu.active{
-    top: 0;
+   top: 0;
   }
   h1{
     font-size: 60px;
@@ -589,6 +593,7 @@ h1{
   }
   .currency-wrapper> div{
     height: 300px;
+    padding-inline: 20px;
   }
   .phone{
     top: 40px;
@@ -630,19 +635,42 @@ h1{
     font-size: 50px;
     line-height: 50px;
   }
-  .creditcard-sec img{
-    width: 230px;
-  }
-  .secure-container{
-    padding-top:40px;
-  }
   .secure-first img{
     display: none;
   }
-  .secure-first>div{
-    height: 30px;
+    .creditcard-sec button{
+      font-size: 13px;
+  }
+  .creditcard-sec img{
+    width: 250px;
+  }
+  .creditcard-sec >div{
+    padding: 30px;
+  }
+  .creditcard-sec p{
+    font-size: 14px ;
+  }
+
+  .Carousel-sec{
+    padding-left: 25px;
+  }
+  .Carousel-sec h5{
+    font-size: 40px;
+    line-height:40px ;
+  }
+  .Carousel-sec span{
+    height: 40px;
+    width: 40px;
+  }
+  .Carousel-sec svg{
+    height: 20px;
+    width: 20px;
+  }
+  .secure-first{
+    gap: 50px;
   }
 }
+
 
 @media (max-width: 480px) {
   h1{
@@ -738,10 +766,8 @@ h1{
   .creditcard-sec >div{
     padding-bottom: 30px;
     gap: 40px;
+    flex-wrap: wrap;
     flex-direction: column-reverse;
-  }
-  .creditcard-sec>div>div{
-    padding: 15px 35px;
   }
   .creditcard-sec img{
     width: 230px;
@@ -762,11 +788,9 @@ h1{
     height: 20px;
     width: 20px;
   }
-  .secure-container{
-    padding: 40px;
-  }
   .secure-first{
-    gap: 160px;
+    gap: 40px;
+    padding-inline: 50px;
   }
   .secure-first h5{
     font-size:40px;
@@ -777,11 +801,8 @@ h1{
     font-size: 12px;
     
   }
-  .secure-first img{
-    display: none;
-  }
-  .secure-first>div{
-    height: 30px;
+  .footer-container{
+    padding-inline: 50px;
   }
 
 }

@@ -4,7 +4,7 @@ import secure from "../assets/images/shield.png";
 
 const Secure = () => {
   return (
-    <div className="secure-container">
+    // <section className="secure-container">
       <div className="secure-first">
         <div>
           <h5>Disappoint thieves</h5>
@@ -13,13 +13,13 @@ const Secure = () => {
             of their money. Here are some <br /> of the important ways to
             protect them.
           </p>
-          <Button>How we keep your money safe</Button>
+          <Button variant="primary" size="sd">How we keep your money safe</Button>
         </div>
         <div>
           <img src={secure} alt="shield image" />
         </div>
       </div>
-    </div>
+    // </section>
   );
 };
 
